@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Jobs>
+
+  <Job Name="CVC Import Field Items" Direction="Inbound" JobType="Excel" ParameterType="Estimate" PromptForStandardDatabase="True" ShowUI="True" GenerateLog="True">
+    <JobTask Name="Import items" Source="PROJECT ITEMS LIST" Aspect="Horizontal" SourceRange="Item_Data_Table" Action="ItemTakeoff" ExcludeColumnNumber="1">
+	
+      <FieldMapping FieldType="EstimateItem" SourceField="Phase" TargetField="PhaseCode" Required="True"/>
+      <FieldMapping FieldType="EstimateItem" SourceField="Item" TargetField="ItemCode" Required="True"/>
+      <FieldMapping FieldType="EstimateItem" SourceField="Description" TargetField="ItemDescription" Required="True"/>
+      <FieldMapping FieldType="EstimateItem" SourceField="Takeoff Quantity" TargetField="TakeoffQuantity"/>
+      <FieldMapping FieldType="EstimateItem" SourceField="TO Unit" TargetField="TakeoffUnit" Required="True"/>
+      <FieldMapping FieldType="EstimateItem" SourceField="Material Quantity" TargetField="MaterialOrderQuantity" Required="True"/>
+      <FieldMapping FieldType="EstimateItem" SourceField="M Unit" TargetField="MaterialOrderUnit" Required="True"/>
+
+      <FieldMapping FieldType="EstimateItem" SourceField="StaticCategory Codes" TargetField="CategoryCodes" Static="True" StaticValue="LMSEO"/>
+      <FieldMapping FieldType="EstimateItem" SourceField="Row" TargetField="Location"/>
+	  
+      <FieldMapping FieldType="EstimateItem" SourceField="Plan" TargetField="WBS01Value"/>
+      <FieldMapping FieldType="EstimateItem" SourceField="Option" TargetField="WBS02Value"/>
+      <FieldMapping FieldType="EstimateItem" SourceField="Order" TargetField="WBS17Value"/>
+	  
+    </JobTask>
+  </Job>
+
+</Jobs>
+
+<!--
+      <FieldMapping FieldType="EstimateItem" SourceField="Estimated cost" TargetField="LaborAmount"/>
+      <FieldMapping FieldType="EstimateItem" SourceField="StaticMaterial Amount" TargetField="MaterialAmount" Static="True" StaticValue="0"/>
+      <FieldMapping FieldType="EstimateItem" SourceField="Adjustments" TargetField="SubcontractAmount"/>
+      <FieldMapping FieldType="EstimateItem" SourceField="StaticEquipment Amount" TargetField="EquipmentAmount" Static="True" StaticValue="0"/>
+      <FieldMapping FieldType="EstimateItem" SourceField="GR-GC cost" TargetField="OtherAmount"/>
+      <FieldMapping FieldType="EstimateItem" SourceField="Note" TargetField="Note"/>
+	  <FieldMapping FieldType="EstimateItem" SourceField="Scope" TargetField="WBS19Value"/>
+	  <FieldMapping FieldType="EstimateItem" SourceField="Region" TargetField="WBS10Value"/>
+	  <FieldMapping FieldType="EstimateItem" SourceField="Park" TargetField="WBS11Value"/>
+	  <FieldMapping FieldType="EstimateItem" SourceField="Asset Codes" TargetField="WBS13Value"/>
+	  <FieldMapping FieldType="EstimateItem" SourceField="Facility Types" TargetField="WBS14Value"/>
+	  <FieldMapping FieldType="EstimateItem" SourceField="UF1" TargetField="WBS04Value"/>
+	  <FieldMapping FieldType="EstimateItem" SourceField="UF2" TargetField="WBS05Value"/>
+	  <FieldMapping FieldType="EstimateItem" SourceField="UF3" TargetField="WBS06Value"/>
+	  <FieldMapping FieldType="EstimateItem" SourceField="MF1" TargetField="WBS03Value"/>
+	  <FieldMapping FieldType="EstimateItem" SourceField="Item number" TargetField="WBS16Value"/>
+	  <FieldMapping FieldType="EstimateItem" SourceField="CLIN" TargetField="WBS17Value"/>
+
+WbsDefinitionId	Description
+1	Work Order
+2	Feat. Code
+3	CSI Div
+4	Uniformat1
+5	Uniformat2
+6	Uniformat3
+7	Uniformat4
+8	WBS08 - Sort
+9	RSM Status
+10	WBS10 - Region
+11	WBS11 - Park
+12	Source
+13	WBS13 - Asset Codes
+14	WBS14 - Facility Types
+15	PMIS Comp.
+16	WBS16 - Item number
+17	WBS17 - CLIN
+18	WBS18 - WO Sub type
+19	WBS19 - Scope
+20	WBS20
+21	WBS21
+22	WBS22
+23	WBS23
+24	WBS24
+25	WBS25
+26	WBS26
+27	WBS27
+28	WBS28
+29	WBS29
+30	WBS30
+31	WBS31
+32	WBS32
+33	WBS33
+34	WBS34
+35	WBS35
+36	WBS36
+37	WBS37
+38	WBS38
+39	WBS39
+40	PIC
+
+-->
