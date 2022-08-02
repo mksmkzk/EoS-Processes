@@ -11,20 +11,20 @@ Import the Warehouse orders into EoS in order to update the budget.
 
 ### 1. Select the estimate to import the orders into.
 
-[img:PLP-Converter\1.png]
+![First Step](./images/PLPimporterSteps.png)
 
 We first select the estimate that we want to import the orders into.
 We right click the estimate, go to 'Integration', then select 'Import Field Items'.
 
 ### 2. Select the file to import the orders from.
 
-[img:PLP-Converter\2.png]
+![Second Step](./images/FileSelectionStep.png)
 
 We get a file selection dialog. We then select the file that we want to import the orders from.
 
 ### 3. The import process goes through and imports the orders.
 
-[img:PLP-Converter\3.png]
+![Third Step](./images/ImportStep.png)
 
 After we selected the file, we go through the import process.
 Once its done, we get a confirmation dialog.
