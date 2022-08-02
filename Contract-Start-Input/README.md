@@ -13,7 +13,7 @@ Since the process is similar and the contract and start data are linked, I combi
 
 ### 1. Select the estimate to generate the contract information from or the STARTS form.
 
-![First Step](./images/GenerateExcel.png)
+![First Step](./Images/GenerateExcel.png)
 
 Right click on an estimate and go to 'eCMS Integration'.
 Select either:
@@ -31,26 +31,26 @@ We want the forms to populate into a specified directory. (16 Input Forms?).
 
 ### Grouping Error
 
-![Grouping Error](./images/GroupingError.png)
+![Grouping Error](./Images/GroupingError.png)
 
 The first error happens when the contract is generated.
 It tries to group the items by footprint quantity.
 
-![Grouping Error Location](./images/GroupingErrorLocation.png)
+![Grouping Error Location](./Images/GroupingErrorLocation.png)
 
 We managed to make it work by summing the footprint quantity and commenting out the footpring quantity grouping.
 
-![Corrected Grouping](./images/CorrectedGrouping.png)
+![Corrected Grouping](./Images/CorrectedGrouping.png)
 
 This gave us the correct? results.
 
-![Correct Results](./images/CorrectResult.png)
+![Correct Results](./Images/CorrectResult.png)
 
 ### Pulling Wrong Data
 
 #### Information
 
-![Pulling Wrong Information](./images/PullingWrongInformation.png)
+![Pulling Wrong Information](./Images/PullingWrongInformation.png)
 
 The Builder, Project, Company Number, Contract Name, Project Name, and Estimator are all either not pulling any data or pulling the wrong data.
 
@@ -58,26 +58,26 @@ The Job Number is pulling the Division Number.
 
 #### START
 
-![Wrong Contract Amount](./images/WrongContractAmount.png)
+![Wrong Contract Amount](./Images/WrongContractAmount.png)
 
 When we generate the START excel, it pulls from the wrong column.
 
-![Pulling Wrong Data](./images/PullingWrongData.png)
+![Pulling Wrong Data](./Images/PullingWrongData.png)
 
 It currently pulls the data from the pumping column.
 
-![Contract Value Error](./images/ContractValueError.png)
+![Contract Value Error](./Images/ContractValueError.png)
 
 We managed to get it working with the above information.
 
 #### Contract
 
-![RFA Error](./images/RFAError.png)
+![RFA Error](./Images/RFAError.png)
 
 There seems to be an error with the RFA column.
 It pulls information from the column below it and leads to wrong results.
 
-![Sage Total Error](./images/SageTotalError.png)
+![Sage Total Error](./Images/SageTotalError.png)
 
 When we sum these values, we get 27,371. 
 The contract amount is 19,995.
