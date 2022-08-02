@@ -9,7 +9,7 @@ Populate the contract information from the current contract with information reg
 
 ## Process
 
-Since the process is similar and the contract and start data are linked, I combined both of them into one.
+Since the process is similar and the contract and START data are linked, I combined both of them into one.
 
 ### 1. Select the estimate to generate the contract information from or the STARTS form.
 
