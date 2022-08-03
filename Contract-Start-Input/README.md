@@ -53,7 +53,7 @@ This is the result after the successful grouping.
 The results were around ~37% higher than the contract amount.
 We managed to pinpoint the issue to the following code:
 
-![Wrong Totals Code](./Images/WrongTotalCode.png)
+![Wrong Totals Code](./Images/WrongTotalsCode.png)
 
 What we had found was that the issue is in the lines that add the Amount with the Allocated Amount.
 
@@ -67,7 +67,7 @@ When we look at plan 4512, we get the following results:
 
 I could be mistaken on this but the math is pretty close.
 
-![Correct Totals Code](./Images/CorrectTotalCode.png)
+![Correct Totals Code](./Images/CorrectedTotalsCode.png)
 
 When we removed all those allocated amounts from the equations, we get the following results:
 
