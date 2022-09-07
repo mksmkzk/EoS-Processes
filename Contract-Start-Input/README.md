@@ -27,7 +27,22 @@ Then we fill out the salmon colored cells.
 
 We want the forms to populate into a specified directory. (16 Input Forms?).
 
-## Issues with Contracts
+## Issues
+
+Currently the biggest issue with the process is taht we cannt get the right tables populated.
+
+![Staging Tables](./Images/StagingTables.png)
+
+The STARTS and Contracts Process under eCMS Integration are not populating the relevant tables. 
+
+Current they populate the Reference.CVC_ContractInputHistory and Reference.CVC_StartInputHistory tables. 
+
+The tables we need them to fill out are the Staging Tables.
+
+- Staging.CVC_ContractInformationData
+
+
+## SOLVED ISSUES
 
 ### Grouping Error
 
@@ -85,6 +100,3 @@ The contract amount is 19,995.
 When we take first value divided by second value, we get ~1.369.
 
 We wanted to know the formula that is being used to generate the Sage Total.
-
-
-
