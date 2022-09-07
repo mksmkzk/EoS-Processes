@@ -57,9 +57,40 @@ We managed to make it work by summing the footprint quantity and commenting out 
 
 ![Corrected Grouping](./Images/CorrectedGrouping.png)
 
-This gave us the correct? results.
+This gave us as result that is grouped correctly but is showing the wrong contract amounts.
 
-![Correct Results](./Images/CorrectResult.png)
+### Incorrect Sage Totals
+
+This is the result after the successful grouping.
+
+![Wrong Results](./Images/WrongTotalResult.png)
+
+The results were around ~37% higher than the contract amount.
+We managed to pinpoint the issue to the following code:
+
+![Wrong Totals Code](./Images/WrongTotalsCode.png)
+
+What we had found was that the issue is in the lines that add the Amount with the Allocated Amount.
+
+I think the allocated amount is the markup amount. However I think the issue is that because the markups need to be on to run the 'Generate Contract Input Form' procedure, the original delta is applied twice and the math is very close.
+
+When we look at plan 4512, we get the following results:
+
+
+- 19995 / 13298 = ~1.5036
+- 27371 / 13298 = ~2.0583
+
+I could be mistaken on this but the math is pretty close.
+
+![Correct Totals Code](./Images/CorrectedTotalsCode.png)
+
+When we removed all those allocated amounts from the equations, we get the following results:
+
+![Correct Totals Results](./Images/CorrectTotalResults.png)
+
+They seem to line up pretty well with the sage contract totals with the markups applied.
+
+![Sage Results With Markups](./Images/SageResultsWithMarkups.png)
 
 ### Pulling Wrong Data
 
